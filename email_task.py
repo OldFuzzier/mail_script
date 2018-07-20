@@ -76,12 +76,12 @@ class ScriptMail(SendEmail):
 
     # run shell
     def exec_shell(self, filename):
-        cmd = 'ls /etc/openvpn/easy-rsa/2.0/keys/'
+        cmd = 'ls /etc/xxxxxxxxx/keys/'
         pipe = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).stdout
         tempList = pipe.readlines()
         temp = [ele.strip() for ele in tempList]
         if filename not in temp:
-            cmd = "/etc/openvpn/openvpn.sh %s" % filename
+            cmd = "/etc/xxxxxxxxxx/vpn.sh %s" % filename
             subprocess.call(cmd)  # execute shell
         else:
             print 'The file have already exis'
