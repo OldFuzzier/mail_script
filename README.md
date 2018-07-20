@@ -2,4 +2,4 @@
 
 ***
 
-`python filename mailaddress`
+`python mail_script.py filename receiver_mailaddress`
